@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -7,9 +8,15 @@ using System.Web.Http;
 
 namespace WebAPI.Controllers
 {
+    /// <summary>
+    /// 這是我的預設 Values API
+    /// </summary>
     public class ValuesController : ApiController
     {
-        // GET api/values
+        /// <summary>
+        /// 取得相關資料
+        /// </summary>
+        /// <returns></returns>
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };
@@ -31,7 +38,10 @@ namespace WebAPI.Controllers
         {
         }
 
-        // DELETE api/values/5
+        /// <summary>
+        /// 刪除資料
+        /// </summary>
+        /// <param name="id">傳入 Value 的 id</param>
         public void Delete(int id)
         {
         }

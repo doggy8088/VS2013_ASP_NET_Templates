@@ -1,4 +1,4 @@
-﻿namespace Facebook.Models
+﻿namespace FBBirthdayApp.Models
 {
     public class FacebookPicture
     {
